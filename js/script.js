@@ -1,9 +1,8 @@
-const yes = new Audio('audio/yes.mp3');
-const no = new Audio('audio/no.mp3');
 const button = document.getElementById("button");
-let timer;
 
-button.addEventListener('click', function(){
+button.addEventListener('click', function () {
+  const yes = new Audio('audio/yes.mp3');
+  const no = new Audio('audio/no.mp3');
   if (button.textContent === "START") {
     console.log("START");
     timer = setInterval(function () {
