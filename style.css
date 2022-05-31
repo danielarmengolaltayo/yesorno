@@ -13,6 +13,7 @@ body{
 #button{
     font-size: 10vw;
     background: limegreen;
+    color: black;
     border: none;
     padding: 3vw 4vw;
     border-radius: 4vw;
