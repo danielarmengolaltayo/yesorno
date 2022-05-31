@@ -9,9 +9,11 @@ button.addEventListener('click', function(){
     timer = setInterval(function () {
       let i = Math.floor(Math.random() * 2);
       if (i === 0) {
+        no.muted = false;
         no.play();
         console.log("NO");
       } else if (i === 1) {
+        yes.muted = false;
         yes.play();
         console.log("YES");
       } else {
