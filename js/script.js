@@ -1,5 +1,6 @@
 let yes, no;
 const button = document.getElementById("button");
+const message = document.getElementById("message");
 
 button.addEventListener('click', function () {
   if (button.textContent === "LOAD") {
@@ -9,6 +10,7 @@ button.addEventListener('click', function () {
     no = new Howl({
       src: ['audio/no.mp3']
     });
+    message.remove();
     button.textContent = "START"
     button.style.background = "limegreen";
   } else if (button.textContent === "START") {

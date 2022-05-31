@@ -8,6 +8,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
 
 #button{
@@ -15,12 +16,18 @@ body{
     background: grey;
     color: black;
     border: none;
-    padding: 3vw 4vw;
-    border-radius: 4vw;
+    padding: 4vw 7vw;
+    border-radius: 15vw;
     font-weight: bold;
 }
 
 #button:hover{
     color: white;
     cursor: pointer;
+}
+
+#message{
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    margin-bottom: 5vw;
 }
