@@ -1,18 +1,18 @@
-// let yes, no;
-const yes = new Howl({
-  src: ['audio/yes.mp3']
-});
-const no = new Howl({
-  src: ['audio/no.mp3']
-});
+let yes, no;
 const button = document.getElementById("button");
 
 button.addEventListener('click', function () {
   if (button.textContent === "LOAD") {
+    yes = new Howl({
+      src: ['audio/yes.mp3']
+    });
+    no = new Howl({
+      src: ['audio/no.mp3']
+    });
     // yes = new Audio('audio/yes.mp3');
     // no = new Audio('audio/no.mp3');
     button.textContent = "START"
-    button.style.background = "orange";
+    button.style.background = "blue";
   } else if (button.textContent === "START") {
     console.log("START");
     timer = setInterval(function () {
