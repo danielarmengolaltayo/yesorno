@@ -1,0 +1,21 @@
+#container {
+    height: 100vh;
+    /* Center vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#button{
+    font-size: 10vw;
+    background: limegreen;
+    border: none;
+    padding: 3vw 4vw;
+    border-radius: 4vw;
+    font-weight: bold;
+}
+
+#button:hover{
+    color: white;
+    cursor: pointer;
+}
