@@ -1,24 +1,20 @@
-let yes;
-let no;
+let yes, no;
 const button = document.getElementById("button");
 
 button.addEventListener('click', function () {
-  if (button.textContent === "START") {
+  if (button.textContent === "LOAD") {
+    yes = new Audio('audio/yes.mp3');
+    no = new Audio('audio/no.mp3');
+    button.textContent = "START"
+    button.style.background = "limegreen";
+  } else if (button.textContent === "START") {
     console.log("START");
     timer = setInterval(function () {
       let i = Math.floor(Math.random() * 2);
       if (i === 0) {
-        if(!no){
-          no = new Audio('audio/no.mp3');
-        }
-        no.muted = false;
         no.play();
         console.log("NO");
       } else if (i === 1) {
-        if(!yes){
-          yes = new Audio('audio/yes.mp3');
-        }
-        yes.muted = false;
         yes.play();
         console.log("YES");
       } else {
