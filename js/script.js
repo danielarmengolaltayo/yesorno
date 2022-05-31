@@ -13,10 +13,12 @@ button.addEventListener('click', function () {
       let i = Math.floor(Math.random() * 2);
       if (i === 0) {
         yes.pause();
+        yes.currentTime = 0;
         no.play();
         console.log("NO");
       } else if (i === 1) {
         no.pause();
+        no.currentTime = 0;
         yes.play();
         console.log("YES");
       } else {
