@@ -6,7 +6,7 @@ button.addEventListener('click', function () {
     yes = new Audio('audio/yes.mp3');
     no = new Audio('audio/no.mp3');
     button.textContent = "START"
-    button.style.background = "limegreen";
+    button.style.background = "pink";
   } else if (button.textContent === "START") {
     console.log("START");
     timer = setInterval(function () {
