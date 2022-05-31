@@ -12,8 +12,9 @@ button.addEventListener('click', function () {
     timer = setInterval(function () {
       let i = Math.floor(Math.random() * 2);
       if (i === 0) {
+        //amb mobile sembla que no em deixa reproduir dos audios alhora, el que m'obliga a parar i reiniciar el currentTime
         yes.pause();
-        no.currentTime = 0;
+        no.currentTime = 0; 
         no.play();
         console.log("NO");
       } else if (i === 1) {
