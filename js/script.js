@@ -3,7 +3,7 @@ const no = new Audio('audio/no.mp3');
 const button = document.getElementById("button");
 let timer;
 
-function startStop() {
+button.addEventListener('click', function(){
   if (button.textContent === "START") {
     console.log("START");
     timer = setInterval(function () {
@@ -26,5 +26,4 @@ function startStop() {
     button.textContent = "START"
     button.style.background = "limegreen";
   }
-
-}
+});
